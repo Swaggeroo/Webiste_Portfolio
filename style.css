@@ -12,6 +12,19 @@ body {
     padding: 0 !important;;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+.textblock {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 #overview{
     margin: 0;
     padding: 0;
