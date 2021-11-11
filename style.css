@@ -19,10 +19,27 @@ main {
     justify-content: center;
 }
 
+footer {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
 .textblock {
     text-align: justify;
+    width: 100%;
+}
+
+.rightTextElement{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.contImg {
+    width: 100%;
 }
 
 #overview{
