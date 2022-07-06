@@ -2,22 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Frederick Heilmann</title>
+    <title>Swaggeroo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
     <link rel="stylesheet" href="style.css"/>
+    <script src="scrollHandler.js"></script>
 </head>
 <body>
     <div id="overview">
-        <h1 id="name">Frederick Heilmann</h1>
+        <h1 id="name">Swaggeroo</h1>
     </div>
 
+    <nav>
+        <a class="indexPoint" href="#cME">
+            <div class="dot activePoint">
+                <div class="dot-inner"></div>
+            </div>
+            <span class="indexDesc selected">ME</span>
+        </a>
+
+        <a class="indexPoint" href="#cPortfolio">
+            <div class="dot">
+                <div class="dot-inner hidden"></div>
+            </div>
+            <span class="indexDesc">Portfolio</span>
+        </a>
+
+        <a class="indexPoint" href="#cSkills">
+            <div class="dot">
+                <div class="dot-inner hidden"></div>
+            </div>
+            <span class="indexDesc">Skills</span>
+        </a>
+
+        <a class="indexPoint" href="#cContact">
+            <div class="dot">
+                <div class="dot-inner hidden"></div>
+            </div>
+            <span class="indexDesc">Contact/Socials</span>
+        </a>
+    </nav>
     <!--TODO Bilder ersetzen-->
     <main>
-        <div class="rightTextElement">
+        <div class="textElement anchor" id="cME">
             <img src="img/nerd.png" alt="Person" class="contImg">
-            <div class="textblock">
+            <div class="textblock" >
                 <h1>HI!</h1>
+                <p class="textblock">
+                    I'm a selftought programmer from Germany. I started coding in the age of 8 and since than it is a passion for me.
+                    <br><br>
+                    I'm currently 19 years old and I'm currently studying computer science dual at the University in Darmstadt with the Telekom as practice partner.<br>
+                    Not only is programming my passion, but actually nearly everything related to computers.
+                    I graduated from Highschool(Gymnasium) in the year of 2022.
+                    I think my first interest in computers came from my father. My first Coding interest came actually from playing minecraft and starting to create modpacks.
+                    Since then I code some stuff which you can find below.
+                </p>
+            </div>
+        </div>
+        <div class="textElement anchor" id="cPortfolio">
+            <img src="img/coding.png" style="padding: 2em; height: 16em; width: 16em" alt="Coding" class="contImg">
+            <div class="textblock">
+                <h1>Portfolio</h1>
+                <p class="textblock">
+                    Over the time I have worked on different projects. Some of them I actually finished.<br><br>
+                    Below you can see some of them. If you want to see more, just click on the link. <br>
+                    Everything else you can find on my <a class="intextLink" href="https://github.swaggeroo.de" target="_blank">Github Page</a>.
+                    <br><br>
+
+                    <h4>AutoChannelBot</h4>
+                    It's a Discord bot that ensures that there is always a free voice channel in the server.
+                    If someone joins a channel that is declared to be always available, a new one will be created for future users.
+                    If the last user leaves a channel, the bot will check if there is any other free one od the same type and if so, it will delete the current one.<br>
+                    <a class="intextLink" href="https://github.com/Swaggeroo/AutoChannelBot" target="_blank">link</a>
+
+                    <h4>ShopSite</h4>
+                    This is a website I made for a school project. It's a full functional shop that sells Animals.<br>
+                    <a class="intextLink" href="https://github.com/Swaggeroo/ShopSite" target="_blank">link</a>
+
+                    <h4>FotoVoting</h4>
+                    This is a WebApp that was created for our school photography class.
+                    It was there so everyone could upload their photos for every topic/task and then vote for the best one.<br>
+                    <a class="intextLink" href="https://github.com/Swaggeroo/FotoVoting" target="_blank">link</a>
+                    <br><br>
+
+                    <h4>AndroidWirelessADB-PowerShell</h4>
+                    This is a PowerShell script that was created to connect to an Android device wireless via ADB.
+                    You just had to connect you device once per USB-Port, and then you can use the script to connect it wireless.
+                    Now it's kinda outdated, because if you use a new Android-Device, you can do the same thing just in the Dev-Options.
+                    But it's still usefully for older devices.<br>
+                    <a class="intextLink" href="https://github.com/Swaggeroo/AndroidWirelesADB-PowerShell" target="_blank">link</a>
+                </p>
+            </div>
+        </div>
+        <div class="textElement anchor" id="cSkills">
+            <img src="img/tools.png" style="padding: 2.5em; height: 13em; width: 13em" alt="Person" class="contImg">
+            <div class="textblock">
+                <h1>Skills</h1>
+                <p class="textblock">
+                    I'm a selftought programmer from Germany. I started coding in the age of 8 and since than it is a passion for me.
+                    <br><br>
+                    Lorem apsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                    quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
+                    sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+                    recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
+                    minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
+                    quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur
+                    fugiat, temporibus enim commodi iusto libero magni deleniti quod quam
+                    consequuntur! Commodi minima excepturi repudiandae velit hic maxime
+                    doloremque. Quaerat provident commodi consectetur veniam similique ad
+                    earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
+                    fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore
+                    suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+                    modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam
+                    totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam
+                    quasi aliquam eligendi, placeat qui corporis!
+                </p>
+            </div>
+        </div>
+        <div class="textElement anchor" id="cContact">
+            <img src="img/social-media.png" style="padding: 2.5em; height: 13em; width: 13em" alt="Person" class="contImg">
+            <div class="textblock">
+                <h1>Contact/Socials</h1>
                 <p class="textblock">
                     I'm a selftought programmer from Germany. I started coding in the age of 8 and since than it is a passion for me.
                     <br><br>

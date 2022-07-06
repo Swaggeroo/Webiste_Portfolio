@@ -3,6 +3,35 @@ html {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    --text-color: #eaeaea;
+    --dark-text-color: #828282;
+    color: var(--text-color);
+}
+
+nav{
+    position: sticky;
+    display: inline-block;
+    left: 1em;
+    top: 50%;
+    float: left;
+}
+
+nav .dot{
+    width: 1em;
+    height: 1em;
+    border: 2px solid var(--dark-text-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em;
+}
+
+nav .dot .dot-inner{
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: var(--text-color);
 }
 
 body {
@@ -24,22 +53,58 @@ footer {
     margin-left: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
+.indexDesc{
+    color: var(--dark-text-color);
+    display: none;
+}
+
+.indexPoint{
+    display: flex;
+    align-items: center;
+}
+
+.active{
+    color: var(--text-color) !important;
+}
+
+.activePoint{
+    border-color: var(--text-color) !important;
+}
+
 .textblock {
     text-align: justify;
     width: 100%;
 }
 
-.rightTextElement{
+.textElement{
     display: flex;
     flex-wrap: wrap;
     align-self: center;
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 
 .contImg {
     width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected{
+    color: var(--text-color) !important;
+}
+
+.intextLink{
+    color: #5942b2 !important;
+    text-decoration: underline;
 }
 
 #overview{
@@ -60,4 +125,23 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Orbitron, sans-serif;
+}
+
+@media only screen and (min-width: 930px) {
+    .textElement > .textblock {
+        width: 25rem;
+    }
+
+    .textElement > .contImg {
+        width: 20rem;
+        height: 20rem;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        aspect-ratio: initial;
+    }
+
+    .indexDesc{
+        display: unset;
+    }
 }
