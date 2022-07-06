@@ -135,6 +135,24 @@ a{
     .textElement > .contImg {
         width: 20rem;
         height: 20rem;
+        top: 0;
+        z-index: 1;
+        aspect-ratio: initial;
+    }
+
+    .indexDesc{
+        display: unset;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    .textElement > .textblock {
+        width: 25rem;
+    }
+
+    .textElement > .contImg {
+        width: 20rem;
+        height: 20rem;
         position: sticky;
         top: 0;
         z-index: 1;

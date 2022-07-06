@@ -4,7 +4,6 @@ let indexPoints = document.getElementsByClassName('indexPoint');
 window.addEventListener("scroll", function() {
     for (let i = anchors.length - 1; i >= 0; i--) {
         if (window.scrollY > (anchors[i].offsetTop - 10)) {
-            console.log("You've scrolled past the div "+i);
             for (let j = indexPoints.length - 1; j >= 0; j--) {
                 removeDot(j);
             }
